@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validate Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+<form action="form.php" class="formWithValidation">	
+	<div>
+		<label>From:</label><br>
+		<input type="text" class="from field">
+	</div>
+
+	<div>
+		<label>Password:</label><br>
+		<input type="password" class="password field">
+	</div>
+	
+	<div>
+		<label>Password confirmation:</label><br>
+		<input type="password" class="passwordConfirmation field">
+	</div>
+	
+	<div>
+		<label>Where:</label><br>
+		<select class="where field">
+			<option></option>
+			<option value="developers">Developers</option>
+			<option value="managers">Managers</option>
+			<option value="devops">DevOps</option>
+		</select>
+	</div>
+	
+	<div>
+		<label>Message</label><br>
+		<textarea class="message field"></textarea>
+	</div>
+	<input type="submit" value="Send" class="validateBtn">
+</form>
+
+<script src="form.js"></script>
+
+</body>
+</html>
